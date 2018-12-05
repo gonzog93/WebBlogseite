@@ -114,6 +114,3 @@ if ( !defined('ABSPATH') )
 /** Definiert WordPress-Variablen und fügt Dateien ein.  */
 require_once(ABSPATH . 'wp-settings.php');
 
-
-//Das Blocken von Skript-Tags deaktivieren
-define('CUSTOM_TAGS', true);
