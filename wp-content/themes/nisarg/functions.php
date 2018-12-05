@@ -222,3 +222,9 @@ function nisarg_get_link_url() {
 
 	return ( $nisarg_has_url ) ? $nisarg_has_url : apply_filters( 'the_permalink', get_permalink() );
 }
+
+//Das Blocken von Skript-Tags deaktivieren
+function add_scriptfilter($string) {
+    global $allowedtags;$allowedtags['script'] = array('src' => array());
+    return $string;
+}add_filter('pre_kses', 'add_scriptfilter');
