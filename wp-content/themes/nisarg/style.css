@@ -68,12 +68,6 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 400;
 }
 
-p{
-    margin-bottom: 1.5em;
-    line-height: 1.7em;
-}
-
-
 a{
     color: #607D8B;
     text-decoration: none;
@@ -516,8 +510,9 @@ img.wp-post-image{
     clear: both;
     display: block;
     float: left;
+    margin-left: 190px;
     margin-bottom: 0px;
-    width: 100%;
+    width: 75%;
     text-transform: uppercase;
 }
 .main-navigation ul {
@@ -740,7 +735,7 @@ img.wp-post-image{
     }
     .main-navigation ul {
         display: block;
-        float: right;
+        float: left;
     }
     .main-navigation ul ul {
         float: left;
@@ -1774,4 +1769,36 @@ img.wp-post-image{
     font-size: 16px;
     margin-top: 0;
     margin-bottom: 1em;
+}
+
+/**
+ * selbstgeschriebenes CSS
+ * ----------------------------------------------------------------------------
+ */
+#artikel_html
+{
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#artikel_html5
+{
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#artikel_servlet_jsp
+{
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#artikel_javascript
+{
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
 }
