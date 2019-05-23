@@ -29,29 +29,29 @@
  * Ersetze datenbankname_hier_einfuegen
  * mit dem Namen der Datenbank, die du verwenden möchtest.
  */
-define('DB_NAME', 'pwebseite');
+define( 'DB_NAME', 'webblogseite' );
 
 /**
  * Ersetze benutzername_hier_einfuegen
  * mit deinem MySQL-Datenbank-Benutzernamen.
  */
-define('DB_USER', 'gonzog93');
+define( 'DB_USER', 'gonzog93' );
 
 /**
  * Ersetze passwort_hier_einfuegen mit deinem MySQL-Passwort.
  */
-define('DB_PASSWORD', 'moritz54');
+define( 'DB_PASSWORD', 'moritz54' );
 
 /**
  * Ersetze localhost mit der MySQL-Serveradresse.
  */
-define('DB_HOST', 'localhost');
+define( 'DB_HOST', 'localhost' );
 
 /**
  * Der Datenbankzeichensatz, der beim Erstellen der
  * Datenbanktabellen verwendet werden soll
  */
-define('DB_CHARSET', 'utf8mb4');
+define( 'DB_CHARSET', 'utf8mb4' );
 
 /**
  * Der Collate-Type sollte nicht geändert werden.
@@ -70,14 +70,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'N]*;S}RVkq(6<hO&5^tWJX{,F#h;*Oe{G$B^^gAGY:r}B_mm1U@?1htfG{k]KUN)');
-define('SECURE_AUTH_KEY',  'Pm_D8hr7~)E8^4m!]VH{P-z}Qu$BO!(kGmK0qjM0R?P<QI^o{SzT*Ho?S65N{S-Y');
-define('LOGGED_IN_KEY',    'JKb#,FF$x&K&/jV?A9ZE/rzwB,:(|=z!E4]+u/rWG~$W,RZz/:^uGc}^Q~4Z?cfs');
-define('NONCE_KEY',        '+M@SlCh*qBA`?nd`jS-fjIRjq$m Pq`V*GQ@&xp_mJ{4zTi~qi/LIRm8S?Jeq5.T');
-define('AUTH_SALT',        'nhOEk$(MbD)pu|jSZ6u.PzY6n8Ojt[=[Rr2{cgpVo>)o0uE15%Nq^)t:kC*m%d&|');
-define('SECURE_AUTH_SALT', 'e.b<RaqPSG}<`Y}SGpSS.B!VUKADO63l)ga+Nu0V,QUAI?$^aYY+5?bvET2yDp!K');
-define('LOGGED_IN_SALT',   'Ix%;>/F1pS*gU<$*rPr0;4EK<U%wnuq7zlJn^1+g]c`_#Z~B+]U*o`)UUwPl_rPd');
-define('NONCE_SALT',       '#!elP/c]$; ;>$8BiQM>ysC}w@h,R0q9IJp&A>-uW&@9t3@DK,?pBrtT_Dfv&j&W');
+define( 'AUTH_KEY',         'B}~Vl`r~_G565.O..ZP}wL/hGlq8,#9tfThiFw23Xm`-a2+1h,|0tQkn%C#apUxp' );
+define( 'SECURE_AUTH_KEY',  '{-_PAkQXEs~OT)$ al`.<OT;{mw_Lhb;=WV,K9E]3~X6<4-b~@l.LYb^ux#v]<I)' );
+define( 'LOGGED_IN_KEY',    '{|yDF*PH[F<g]Ncwn3gLzLjZo0Ayf`gdfqCST;Q)>Vd1Z@~*s,]?Lki{]dY/01~.' );
+define( 'NONCE_KEY',        '*4gd&I_a;a!>P8}pBW^orOwhJFH9/$uSIhK[.*;QpMiN.v_q~wsS]GMeW6z8y(1j' );
+define( 'AUTH_SALT',        'zJ[]g]NjQ`FrEsUlMb4&VaaoN(PTJM2JgMEw4T6I<e_i%q_jn5bW8c{L0,M0{7ul' );
+define( 'SECURE_AUTH_SALT', 'i]D$WTNI^$2;Acgx<l~`uUbl0/3Il5yl /%Mv(jFm/Zp./TxVuU?5iDf6$]n~/!F' );
+define( 'LOGGED_IN_SALT',   'PrZ~^97DX)bp62g?YGw|k5`0fcHb4HJ:3k7^+HMyWt!XsBB2|eRN);vLQMr d2P]' );
+define( 'NONCE_SALT',       'GXZ$oG~Falz+T]OHiG)3vwE(ReJ{w}$<C%NWlE$lCxiNw-_ha61.#L.{;n5>6g=!' );
 
 /**#@-*/
 
@@ -88,7 +88,7 @@ define('NONCE_SALT',       '#!elP/c]$; ;>$8BiQM>ysC}w@h,R0q9IJp&A>-uW&@9t3@DK,?p
  * verschiedene WordPress-Installationen betreiben.
  * Bitte verwende nur Zahlen, Buchstaben und Unterstriche!
  */
-$table_prefix  = 'wp_';
+$table_prefix = 'wp_';
 
 /**
  * Für Entwickler: Der WordPress-Debug-Modus.
@@ -102,17 +102,15 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define( 'WP_DEBUG', false );
 
-/* Das war’s, Schluss mit dem Bearbeiten! Viel Spaß beim Bloggen. */
-/* That's all, stop editing! Happy blogging. */
+/* Das war’s, Schluss mit dem Bearbeiten! Viel Spaß. */
+/* That's all, stop editing! Happy publishing. */
 
 /** Der absolute Pfad zum WordPress-Verzeichnis. */
-if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+if ( ! defined( 'ABSPATH' ) ) {
+	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
+}
 
 /** Definiert WordPress-Variablen und fügt Dateien ein.  */
-require_once(ABSPATH . 'wp-settings.php');
-
-//Das Blocken von Skript-Tags deaktivieren
-define('CUSTOM_TAGS', true);
+require_once( ABSPATH . 'wp-settings.php' );

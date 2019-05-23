@@ -25,7 +25,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 <header id="masthead"  role="banner">
-        <nav id="site-navigation" class="main-navigation navbar-fixed-top navbar-left" role="navigation">
+	<nav id="site-navigation" class="main-navigation navbar-fixed-top navbar-left" role="navigation">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="container" id="navigation_menu">
 			<div class="navbar-header">
